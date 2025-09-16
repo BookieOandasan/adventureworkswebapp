@@ -1,3 +1,17 @@
-<div *ngFor="let dataItem of departments">
-  <div>{{dataItem.name}}</div>
+<div>
+  <h1>Departments</h1>
 </div>
+<table>
+  <tr>
+    <th>DepartmentID</th>
+    <th>Name</th>
+    <th>GroupName</th>
+    <th>ModifiedDate</th>
+  </tr>
+  <tr *ngFor="let dataItem of departments" class="table">
+    <td>{{dataItem.departmentID}}</td>
+    <td>{{dataItem.name}}</td>
+    <td>{{dataItem.groupName}}</td>
+    <td>{{dataItem.modifiedDate}}</td>
+  </tr>
+</table>
